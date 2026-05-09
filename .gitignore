@@ -1,0 +1,7 @@
+# Trivy raw scan results
+scans/*-result.json
+
+# Optional temporary files
+*.log
+__pycache__/
+.DS_Store
