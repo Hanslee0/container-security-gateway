@@ -102,6 +102,17 @@ python3 scripts/enforce_policy.py scans/nginx-1.21-decision.json nginx:1.21
 
 -----
 
+## 5단계: 전체 자동화 스크립트 작성
+
+1. Trivy 스캔, 결과 정리, OPA 판단, 리포트 생성, 배포 차단을 하나의 스크립트로 통합
+2. 이미지 이름을 입력하면 전체 보안 검사 흐름이 자동으로 실행됨
+3. OPA 판단 결과에 따라 ALLOW / HOLD / BLOCK 처리
+4. BLOCK이면 배포 차단, HOLD면 배포 보류, ALLOW면 배포 가능 처리
+
+명령어:
+
+./security-gate.sh nginx:1.21
+
 ## 전체 흐름
 
 Trivy 스캔

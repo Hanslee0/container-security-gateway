@@ -5,3 +5,13 @@ scans/*-result.json
 *.log
 __pycache__/
 .DS_Store
+
+# Trivy raw scan results
+scans/*-result.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Log files
+*.log

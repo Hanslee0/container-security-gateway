@@ -1,0 +1,11 @@
+{
+  "image": "alpine:latest",
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0,
+    "UNKNOWN": 0
+  },
+  "vulnerabilities": []
+}

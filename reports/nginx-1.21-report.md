@@ -1,22 +1,22 @@
 # Container Security Report
 
-- 생성 시간: 2026-05-22 15:06:33
+- 생성 시간: 2026-05-25 17:00:52
 - 이미지명: `nginx:1.21`
 
 ## 1. 정책 판단 결과
 
 - 결과: **BLOCK**
-- 사유: Critical vulnerabilities found: 27
+- 사유: Critical vulnerabilities found: 26
 
 ## 2. 취약점 요약
 
 | Severity | Count |
 |---|---:|
-| CRITICAL | 27 |
-| HIGH | 161 |
-| MEDIUM | 287 |
-| LOW | 176 |
-| UNKNOWN | 18 |
+| CRITICAL | 26 |
+| HIGH | 156 |
+| MEDIUM | 263 |
+| LOW | 211 |
+| UNKNOWN | 13 |
 
 ## 3. 주요 취약점 목록
 
