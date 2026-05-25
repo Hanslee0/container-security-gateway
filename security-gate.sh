@@ -1,12 +1,25 @@
 #!/bin/bash
 
 IMAGE="$1"
-DEPLOY_OPTION="$2"
+ENVIRONMENT="dev"
+DEPLOY_OPTION=""
+
+if [ "$2" = "--deploy" ]; then
+  DEPLOY_OPTION="--deploy"
+elif [ -n "$2" ]; then
+  ENVIRONMENT="$2"
+fi
+
+if [ "$3" = "--deploy" ]; then
+  DEPLOY_OPTION="--deploy"
+fi
 
 if [ -z "$IMAGE" ]; then
-  echo "사용법: ./security-gate.sh <image-name> [--deploy]"
-  echo "예시: ./security-gate.sh nginx:1.21"
-  echo "예시: ./security-gate.sh nginx:latest --deploy"
+  echo "사용법: ./security-gate.sh <image-name> [dev|staging|prod] [--deploy]"
+  echo "예시: ./security-gate.sh nginx:1.21 dev"
+  echo "예시: ./security-gate.sh nginx:1.21 staging"
+  echo "예시: ./security-gate.sh nginx:1.21 prod"
+  echo "예시: ./security-gate.sh nginx:latest prod --deploy"
   exit 1
 fi
 
@@ -22,6 +35,7 @@ echo "==================================="
 echo "[SECURITY GATE] 시작"
 echo "==================================="
 echo "이미지: $IMAGE"
+echo "배포 환경: $ENVIRONMENT"
 echo ""
 
 echo "----- 1. Trivy 취약점 스캔 -----"
@@ -35,7 +49,7 @@ echo "[OK] Trivy 스캔 결과 저장: $RAW_RESULT"
 echo ""
 
 echo "----- 2. Trivy 결과 정규화 -----"
-python3 scripts/normalize_trivy.py "$RAW_RESULT" "$NORMALIZED_RESULT"
+python3 scripts/normalize_trivy.py "$RAW_RESULT" "$NORMALIZED_RESULT" "$ENVIRONMENT"
 
 echo "[OK] 정규화 결과 저장: $NORMALIZED_RESULT"
 echo ""

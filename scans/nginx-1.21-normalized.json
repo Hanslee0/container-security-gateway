@@ -1,5 +1,6 @@
 {
   "image": "nginx:1.21",
+  "environment": "prod",
   "summary": {
     "CRITICAL": 26,
     "HIGH": 156,

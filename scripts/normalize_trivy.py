@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 
-def normalize_trivy(input_path, output_path):
+def normalize_trivy(input_path, output_path, environment="dev"):
     with open(input_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -38,9 +38,10 @@ def normalize_trivy(input_path, output_path):
             })
 
     normalized = {
-        "image": image_name,
-        "summary": summary,
-        "vulnerabilities": vulnerabilities
+    "image": image_name,
+    "environment": environment,
+    "summary": summary,
+    "vulnerabilities": vulnerabilities
     }
 
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
@@ -53,8 +54,9 @@ def normalize_trivy(input_path, output_path):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python3 scripts/normalize_trivy.py <input_json> <output_json>")
+    if len(sys.argv) < 3:
+        print("Usage: python3 scripts/normalize_trivy.py <input_json> <output_json> [environment]")
         sys.exit(1)
 
-    normalize_trivy(sys.argv[1], sys.argv[2])
+    environment = sys.argv[3] if len(sys.argv) >= 4 else "dev"
+    normalize_trivy(sys.argv[1], sys.argv[2], environment)

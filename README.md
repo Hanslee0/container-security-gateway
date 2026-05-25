@@ -113,6 +113,82 @@ python3 scripts/enforce_policy.py scans/nginx-1.21-decision.json nginx:1.21
 
 ./security-gate.sh nginx:1.21
 
+-----
+
+## 6단계: 여러 이미지 테스트
+
+1. 여러 컨테이너 이미지를 대상으로 security-gate.sh를 수동 실행
+2. 이미지별 Trivy 스캔, 정규화, OPA 판단, 리포트 생성 흐름 확인
+3. 이미지별 ALLOW / HOLD / BLOCK 결과 비교
+
+테스트 이미지:
+
+- nginx:1.21
+- alpine:latest
+- alpine:3.18
+- python:3.8-slim
+
+명령어 예시:
+
+./security-gate.sh nginx:1.21
+./security-gate.sh alpine:latest
+./security-gate.sh alpine:3.18
+./security-gate.sh python:3.8-slim
+
+
+-----
+
+## 7단계: 정책 기준 세분화
+
+1. 배포 환경을 dev / staging / prod로 구분
+2. 환경별로 서로 다른 보안 정책 기준 적용
+3. dev는 개발 환경이므로 완화된 기준 적용
+4. staging은 운영 전 검증 환경이므로 중간 기준 적용
+5. prod는 실제 운영 환경이므로 가장 엄격한 기준 적용
+6. 같은 이미지라도 배포 환경에 따라 ALLOW / HOLD / BLOCK 결과가 달라질 수 있도록 구현
+
+정책 기준:
+
+prod 환경
+- CRITICAL 1개 이상 → BLOCK
+- HIGH 3개 이상 → HOLD
+- UNKNOWN 5개 이상 → HOLD
+- 그 외 → ALLOW
+
+staging 환경
+- CRITICAL 3개 이상 → BLOCK
+- CRITICAL 1개 이상 → HOLD
+- HIGH 5개 이상 → HOLD
+- 그 외 → ALLOW
+
+dev 환경
+- CRITICAL 5개 이상 → BLOCK
+- HIGH 10개 이상 → HOLD
+- 그 외 → ALLOW
+
+명령어:
+
+./security-gate.sh nginx:1.21 dev
+./security-gate.sh nginx:1.21 staging
+./security-gate.sh nginx:1.21 prod
+
+
+-----
+
+## 8단계: 리포트 개선
+
+1. 기존 기본 리포트에 배포 환경 정보를 추가
+2. 전체 취약점 개수와 심각도별 개수 표시
+3. 수정 가능한 취약점 개수 표시
+4. CRITICAL/HIGH 취약점 비율 계산
+5. 많이 탐지된 취약 패키지 Top 5 출력
+6. 주요 조치 대상 CVE 목록 출력
+7. 판단 결과별 권장 조치와 재검사 명령어 추가
+
+명령어:
+
+python3 scripts/generate_report.py scans/nginx-1.21-normalized.json scans/nginx-1.21-decision.json reports/nginx-1.21-report.md
+
 ## 전체 흐름
 
 Trivy 스캔
