@@ -2,26 +2,26 @@
 
 ## 1. 최종 요약
 
-- 생성 시간: 2026-05-25 17:22:49
+- 생성 시간: 2026-05-29 13:17:44
 - 이미지명: `nginx:1.21`
 - 배포 환경: `prod`
 - 최종 판단: **BLOCK**
-- 판단 사유: prod environment: CRITICAL vulnerabilities found: 26
+- 판단 사유: prod environment: CRITICAL vulnerabilities found: 28
 
-`nginx:1.21` 이미지는 `prod` 환경 기준에서 **BLOCK** 처리되었습니다. 주요 사유는 `prod environment: CRITICAL vulnerabilities found: 26`이며, CRITICAL 취약점 26개와 HIGH 취약점 156개가 확인되었습니다.
+`nginx:1.21` 이미지는 `prod` 환경 기준에서 **BLOCK** 처리되었습니다. 주요 사유는 `prod environment: CRITICAL vulnerabilities found: 28`이며, CRITICAL 취약점 28개와 HIGH 취약점 144개가 확인되었습니다.
 
 ## 2. 취약점 요약
 
 | 항목 | 개수 |
 |---|---:|
-| 전체 취약점 | 669 |
-| CRITICAL | 26 |
-| HIGH | 156 |
-| MEDIUM | 263 |
-| LOW | 211 |
-| UNKNOWN | 13 |
-| 수정 가능한 취약점 | 388 |
-| CRITICAL/HIGH 비율 | 27.2% |
+| 전체 취약점 | 672 |
+| CRITICAL | 28 |
+| HIGH | 144 |
+| MEDIUM | 287 |
+| LOW | 198 |
+| UNKNOWN | 15 |
+| 수정 가능한 취약점 | 396 |
+| CRITICAL/HIGH 비율 | 25.6% |
 
 ## 3. 많이 탐지된 취약 패키지 Top 5
 

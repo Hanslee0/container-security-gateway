@@ -29,7 +29,9 @@ RAW_RESULT="scans/${SAFE_IMAGE}-result.json"
 NORMALIZED_RESULT="scans/${SAFE_IMAGE}-normalized.json"
 DECISION_RESULT="scans/${SAFE_IMAGE}-decision.json"
 REPORT_FILE="reports/${SAFE_IMAGE}-report.md"
+AI_GUIDE_FILE="reports/${SAFE_IMAGE}-ai-guide.md"
 POLICY_FILE="policies/deploy_policy.rego"
+
 
 echo "==================================="
 echo "[SECURITY GATE] 시작"
@@ -74,7 +76,22 @@ python3 scripts/generate_report.py \
 echo "[OK] 리포트 생성 완료: $REPORT_FILE"
 echo ""
 
-echo "----- 5. 배포 허용 / 보류 / 차단 처리 -----"
+echo "----- 5. AI 한국어 대응 가이드 생성 -----"
+
+if [ -n "$GEMINI_API_KEY" ]; then
+  python3 scripts/generate_ai_guide.py \
+    "$NORMALIZED_RESULT" \
+    "$DECISION_RESULT" \
+    "$AI_GUIDE_FILE"
+
+  echo "[OK] AI 가이드 생성 완료: $AI_GUIDE_FILE"
+else
+  echo "[SKIP] GEMINI_API_KEY가 설정되지 않아 AI 가이드 생성을 건너뜁니다."
+fi
+
+echo ""
+
+echo "----- 6. 배포 허용 / 보류 / 차단 처리 -----"
 
 if [ "$DEPLOY_OPTION" = "--deploy" ]; then
   python3 scripts/enforce_policy.py "$DECISION_RESULT" "$IMAGE" --deploy --container-name "${SAFE_IMAGE}-demo"
@@ -92,5 +109,6 @@ echo "원본 스캔 결과: $RAW_RESULT"
 echo "정규화 결과: $NORMALIZED_RESULT"
 echo "정책 판단 결과: $DECISION_RESULT"
 echo "기본 리포트: $REPORT_FILE"
+echo "AI 대응 가이드: $AI_GUIDE_FILE"
 
 exit $EXIT_CODE

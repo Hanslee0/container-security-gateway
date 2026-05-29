@@ -189,6 +189,41 @@ dev 환경
 
 python3 scripts/generate_report.py scans/nginx-1.21-normalized.json scans/nginx-1.21-decision.json reports/nginx-1.21-report.md
 
+-----
+
+## 9단계: AI 한국어 대응 가이드 생성
+
+1. OPA 판단 결과와 정규화된 취약점 정보를 AI 입력값으로 사용
+2. AI는 배포 허용/차단을 판단하지 않고, OPA 판단 결과를 설명하는 역할만 수행
+3. 이미지명, 배포 환경, 취약점 요약, 주요 CVE 정보를 바탕으로 한국어 대응 가이드 생성
+4. 개발자가 이해하기 쉬운 판단 요약, 주요 위험 요소, 권장 조치, 재검사 안내를 Markdown 형식으로 출력
+
+명령어:
+
+python3 scripts/generate_ai_guide.py scans/nginx-1.21-normalized.json scans/nginx-1.21-decision.json reports/nginx-1.21-ai-guide.md
+
+생성 결과:
+
+reports/nginx-1.21-ai-guide.md
+
+-----
+
+## 10단계: AI 가이드 자동화 스크립트 통합
+
+1. 기존 security-gate.sh에 AI 한국어 대응 가이드 생성 단계를 추가
+2. GEMINI_API_KEY가 설정되어 있으면 AI 가이드를 자동 생성
+3. API 키가 없으면 AI 가이드 생성만 건너뛰고 기존 보안 검사 흐름은 계속 실행
+4. Trivy 스캔, 결과 정리, OPA 판단, 리포트 생성, AI 가이드 생성, 배포 차단을 하나의 명령어로 실행
+
+명령어:
+
+./security-gate.sh nginx:1.21 prod
+
+생성 결과:
+
+reports/nginx-1.21-report.md
+reports/nginx-1.21-ai-guide.md
+
 ## 전체 흐름
 
 Trivy 스캔
