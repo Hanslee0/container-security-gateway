@@ -1,0 +1,1877 @@
+{
+  "image": "nginx",
+  "environment": "dev",
+  "summary": {
+    "CRITICAL": 2,
+    "HIGH": 33,
+    "MEDIUM": 72,
+    "LOW": 119,
+    "UNKNOWN": 7
+  },
+  "vulnerabilities": [
+    {
+      "id": "CVE-2011-3374",
+      "severity": "LOW",
+      "package": "apt",
+      "installed_version": "3.0.3",
+      "fixed_version": "",
+      "title": "It was found that apt-key in apt, all versions, do not correctly valid ..."
+    },
+    {
+      "id": "TEMP-0841856-B18BAF",
+      "severity": "LOW",
+      "package": "bash",
+      "installed_version": "5.2.37-2+b9",
+      "fixed_version": "",
+      "title": "[Privilege escalation possible to other user than root]"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "severity": "MEDIUM",
+      "package": "bsdutils",
+      "installed_version": "1:2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: TOCTOU in the mount program when setting up loop devices"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "severity": "MEDIUM",
+      "package": "bsdutils",
+      "installed_version": "1:2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "severity": "LOW",
+      "package": "bsdutils",
+      "installed_version": "1:2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline"
+    },
+    {
+      "id": "CVE-2025-14104",
+      "severity": "LOW",
+      "package": "bsdutils",
+      "installed_version": "1:2.41-5",
+      "fixed_version": "",
+      "title": "A flaw was found in util-linux. This vulnerability allows a heap buffe ..."
+    },
+    {
+      "id": "CVE-2017-18018",
+      "severity": "LOW",
+      "package": "coreutils",
+      "installed_version": "9.7-3",
+      "fixed_version": "",
+      "title": "coreutils: race condition vulnerability in chown and chgrp"
+    },
+    {
+      "id": "CVE-2025-5278",
+      "severity": "LOW",
+      "package": "coreutils",
+      "installed_version": "9.7-3",
+      "fixed_version": "",
+      "title": "A flaw was found in GNU Coreutils. The sort utility's begfield() funct ..."
+    },
+    {
+      "id": "CVE-2026-5773",
+      "severity": "HIGH",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse"
+    },
+    {
+      "id": "CVE-2026-6276",
+      "severity": "HIGH",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Information disclosure due to cookie leak when reusing connections with custom Host headers"
+    },
+    {
+      "id": "CVE-2026-1965",
+      "severity": "MEDIUM",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication"
+    },
+    {
+      "id": "CVE-2026-3783",
+      "severity": "MEDIUM",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect"
+    },
+    {
+      "id": "CVE-2026-3784",
+      "severity": "MEDIUM",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Unauthorized access due to improper HTTP proxy connection reuse"
+    },
+    {
+      "id": "CVE-2026-3805",
+      "severity": "MEDIUM",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling"
+    },
+    {
+      "id": "CVE-2026-4873",
+      "severity": "MEDIUM",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Information disclosure due to incorrect TLS connection reuse"
+    },
+    {
+      "id": "CVE-2026-5545",
+      "severity": "MEDIUM",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse"
+    },
+    {
+      "id": "CVE-2026-6253",
+      "severity": "MEDIUM",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Proxy credential disclosure via redirects to unauthenticated proxies"
+    },
+    {
+      "id": "CVE-2026-6429",
+      "severity": "MEDIUM",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Credential leak via reused proxy connection during HTTP redirects"
+    },
+    {
+      "id": "CVE-2026-7168",
+      "severity": "MEDIUM",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse"
+    },
+    {
+      "id": "CVE-2025-10966",
+      "severity": "LOW",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl's code for managing SSH connections when SFTP was done using the  ..."
+    },
+    {
+      "id": "CVE-2025-14017",
+      "severity": "LOW",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers"
+    },
+    {
+      "id": "CVE-2025-14524",
+      "severity": "LOW",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: Information disclosure via cross-protocol redirect with OAuth2 bearer token"
+    },
+    {
+      "id": "CVE-2025-14819",
+      "severity": "LOW",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Improper certificate validation due to cached TLS settings reuse"
+    },
+    {
+      "id": "CVE-2025-15079",
+      "severity": "LOW",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: Host verification bypass during SSH transfers"
+    },
+    {
+      "id": "CVE-2025-15224",
+      "severity": "LOW",
+      "package": "curl",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libssh key passphrase bypass without agent set"
+    },
+    {
+      "id": "CVE-2011-3374",
+      "severity": "LOW",
+      "package": "libapt-pkg7.0",
+      "installed_version": "3.0.3",
+      "fixed_version": "",
+      "title": "It was found that apt-key in apt, all versions, do not correctly valid ..."
+    },
+    {
+      "id": "CVE-2026-27456",
+      "severity": "MEDIUM",
+      "package": "libblkid1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: TOCTOU in the mount program when setting up loop devices"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "severity": "MEDIUM",
+      "package": "libblkid1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "severity": "LOW",
+      "package": "libblkid1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline"
+    },
+    {
+      "id": "CVE-2025-14104",
+      "severity": "LOW",
+      "package": "libblkid1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "A flaw was found in util-linux. This vulnerability allows a heap buffe ..."
+    },
+    {
+      "id": "CVE-2026-5435",
+      "severity": "MEDIUM",
+      "package": "libc-bin",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: glibc: Out-of-bounds write via TSIG record processing"
+    },
+    {
+      "id": "CVE-2026-5450",
+      "severity": "MEDIUM",
+      "package": "libc-bin",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width"
+    },
+    {
+      "id": "CVE-2026-5928",
+      "severity": "MEDIUM",
+      "package": "libc-bin",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings"
+    },
+    {
+      "id": "CVE-2026-6238",
+      "severity": "MEDIUM",
+      "package": "libc-bin",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: glibc: Application crash or uninitialized memory read via crafted DNS response"
+    },
+    {
+      "id": "CVE-2010-4756",
+      "severity": "LOW",
+      "package": "libc-bin",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: glob implementation can cause excessive CPU and memory consumption due to crafted glob expressions"
+    },
+    {
+      "id": "CVE-2018-20796",
+      "severity": "LOW",
+      "package": "libc-bin",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c"
+    },
+    {
+      "id": "CVE-2019-1010022",
+      "severity": "LOW",
+      "package": "libc-bin",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: stack guard protection bypass"
+    },
+    {
+      "id": "CVE-2019-1010023",
+      "severity": "LOW",
+      "package": "libc-bin",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: running ldd on malicious ELF leads to code execution because of wrong size computation"
+    },
+    {
+      "id": "CVE-2019-1010024",
+      "severity": "LOW",
+      "package": "libc-bin",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: ASLR bypass using cache of thread stack and heap"
+    },
+    {
+      "id": "CVE-2019-1010025",
+      "severity": "LOW",
+      "package": "libc-bin",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: information disclosure of heap addresses of pthread_created thread"
+    },
+    {
+      "id": "CVE-2019-9192",
+      "severity": "LOW",
+      "package": "libc-bin",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c"
+    },
+    {
+      "id": "CVE-2026-5435",
+      "severity": "MEDIUM",
+      "package": "libc6",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: glibc: Out-of-bounds write via TSIG record processing"
+    },
+    {
+      "id": "CVE-2026-5450",
+      "severity": "MEDIUM",
+      "package": "libc6",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: glibc: Heap Buffer Overflow in `scanf` with `%mc` format specifier and large width"
+    },
+    {
+      "id": "CVE-2026-5928",
+      "severity": "MEDIUM",
+      "package": "libc6",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: glibc: Information disclosure or denial of service via ungetwc function with specific wide character encodings"
+    },
+    {
+      "id": "CVE-2026-6238",
+      "severity": "MEDIUM",
+      "package": "libc6",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: glibc: Application crash or uninitialized memory read via crafted DNS response"
+    },
+    {
+      "id": "CVE-2010-4756",
+      "severity": "LOW",
+      "package": "libc6",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: glob implementation can cause excessive CPU and memory consumption due to crafted glob expressions"
+    },
+    {
+      "id": "CVE-2018-20796",
+      "severity": "LOW",
+      "package": "libc6",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c"
+    },
+    {
+      "id": "CVE-2019-1010022",
+      "severity": "LOW",
+      "package": "libc6",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: stack guard protection bypass"
+    },
+    {
+      "id": "CVE-2019-1010023",
+      "severity": "LOW",
+      "package": "libc6",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: running ldd on malicious ELF leads to code execution because of wrong size computation"
+    },
+    {
+      "id": "CVE-2019-1010024",
+      "severity": "LOW",
+      "package": "libc6",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: ASLR bypass using cache of thread stack and heap"
+    },
+    {
+      "id": "CVE-2019-1010025",
+      "severity": "LOW",
+      "package": "libc6",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: information disclosure of heap addresses of pthread_created thread"
+    },
+    {
+      "id": "CVE-2019-9192",
+      "severity": "LOW",
+      "package": "libc6",
+      "installed_version": "2.41-12+deb13u3",
+      "fixed_version": "",
+      "title": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c"
+    },
+    {
+      "id": "CVE-2026-5773",
+      "severity": "HIGH",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Wrong file transfer due to incorrect SMB connection reuse"
+    },
+    {
+      "id": "CVE-2026-6276",
+      "severity": "HIGH",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Information disclosure due to cookie leak when reusing connections with custom Host headers"
+    },
+    {
+      "id": "CVE-2026-1965",
+      "severity": "MEDIUM",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication"
+    },
+    {
+      "id": "CVE-2026-3783",
+      "severity": "MEDIUM",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect"
+    },
+    {
+      "id": "CVE-2026-3784",
+      "severity": "MEDIUM",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Unauthorized access due to improper HTTP proxy connection reuse"
+    },
+    {
+      "id": "CVE-2026-3805",
+      "severity": "MEDIUM",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling"
+    },
+    {
+      "id": "CVE-2026-4873",
+      "severity": "MEDIUM",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Information disclosure due to incorrect TLS connection reuse"
+    },
+    {
+      "id": "CVE-2026-5545",
+      "severity": "MEDIUM",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Authentication bypass due to incorrect HTTP Negotiate connection reuse"
+    },
+    {
+      "id": "CVE-2026-6253",
+      "severity": "MEDIUM",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Proxy credential disclosure via redirects to unauthenticated proxies"
+    },
+    {
+      "id": "CVE-2026-6429",
+      "severity": "MEDIUM",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Credential leak via reused proxy connection during HTTP redirects"
+    },
+    {
+      "id": "CVE-2026-7168",
+      "severity": "MEDIUM",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Information disclosure via incorrect Proxy-Authorization header reuse"
+    },
+    {
+      "id": "CVE-2025-10966",
+      "severity": "LOW",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl's code for managing SSH connections when SFTP was done using the  ..."
+    },
+    {
+      "id": "CVE-2025-14017",
+      "severity": "LOW",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers"
+    },
+    {
+      "id": "CVE-2025-14524",
+      "severity": "LOW",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: Information disclosure via cross-protocol redirect with OAuth2 bearer token"
+    },
+    {
+      "id": "CVE-2025-14819",
+      "severity": "LOW",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libcurl: Improper certificate validation due to cached TLS settings reuse"
+    },
+    {
+      "id": "CVE-2025-15079",
+      "severity": "LOW",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: Host verification bypass during SSH transfers"
+    },
+    {
+      "id": "CVE-2025-15224",
+      "severity": "LOW",
+      "package": "libcurl4t64",
+      "installed_version": "8.14.1-2+deb13u3",
+      "fixed_version": "",
+      "title": "curl: libssh key passphrase bypass without agent set"
+    },
+    {
+      "id": "CVE-2026-33164",
+      "severity": "HIGH",
+      "package": "libde265-0",
+      "installed_version": "1.0.15-1+b3",
+      "fixed_version": "",
+      "title": "libde265 is an open source implementation of the h.265 video codec. Pr ..."
+    },
+    {
+      "id": "CVE-2024-38949",
+      "severity": "MEDIUM",
+      "package": "libde265-0",
+      "installed_version": "1.0.15-1+b3",
+      "fixed_version": "",
+      "title": "Heap Buffer Overflow vulnerability in Libde265 v1.0.15 allows attacker ..."
+    },
+    {
+      "id": "CVE-2024-38950",
+      "severity": "MEDIUM",
+      "package": "libde265-0",
+      "installed_version": "1.0.15-1+b3",
+      "fixed_version": "",
+      "title": "Heap Buffer Overflow vulnerability in Libde265 v1.0.15 allows attacker ..."
+    },
+    {
+      "id": "CVE-2026-33165",
+      "severity": "MEDIUM",
+      "package": "libde265-0",
+      "installed_version": "1.0.15-1+b3",
+      "fixed_version": "",
+      "title": "libde265 is an open source implementation of the h.265 video codec. Pr ..."
+    },
+    {
+      "id": "CVE-2025-61147",
+      "severity": "LOW",
+      "package": "libde265-0",
+      "installed_version": "1.0.15-1+b3",
+      "fixed_version": "",
+      "title": "strukturag libde265 commit d9fea9d wa discovered to contain a segmenta ..."
+    },
+    {
+      "id": "CVE-2026-25210",
+      "severity": "HIGH",
+      "package": "libexpat1",
+      "installed_version": "2.7.1-2",
+      "fixed_version": "",
+      "title": "libexpat: libexpat: Information disclosure and data integrity issues due to integer overflow in buffer reallocation"
+    },
+    {
+      "id": "CVE-2026-45186",
+      "severity": "HIGH",
+      "package": "libexpat1",
+      "installed_version": "2.7.1-2",
+      "fixed_version": "",
+      "title": "libexpat: denial of service via crafted XML input"
+    },
+    {
+      "id": "CVE-2025-59375",
+      "severity": "MEDIUM",
+      "package": "libexpat1",
+      "installed_version": "2.7.1-2",
+      "fixed_version": "",
+      "title": "libexpat in Expat before 2.7.2 allows attackers to trigger large dynam ..."
+    },
+    {
+      "id": "CVE-2025-66382",
+      "severity": "MEDIUM",
+      "package": "libexpat1",
+      "installed_version": "2.7.1-2",
+      "fixed_version": "",
+      "title": "In libexpat through 2.7.3, a crafted file with an approximate size of  ..."
+    },
+    {
+      "id": "CVE-2026-32776",
+      "severity": "MEDIUM",
+      "package": "libexpat1",
+      "installed_version": "2.7.1-2",
+      "fixed_version": "",
+      "title": "libexpat: libexpat: Denial of Service due to NULL pointer dereference"
+    },
+    {
+      "id": "CVE-2026-32777",
+      "severity": "MEDIUM",
+      "package": "libexpat1",
+      "installed_version": "2.7.1-2",
+      "fixed_version": "",
+      "title": "libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing"
+    },
+    {
+      "id": "CVE-2026-32778",
+      "severity": "MEDIUM",
+      "package": "libexpat1",
+      "installed_version": "2.7.1-2",
+      "fixed_version": "",
+      "title": "libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition"
+    },
+    {
+      "id": "CVE-2026-24515",
+      "severity": "LOW",
+      "package": "libexpat1",
+      "installed_version": "2.7.1-2",
+      "fixed_version": "",
+      "title": "libexpat: libexpat null pointer dereference"
+    },
+    {
+      "id": "CVE-2026-41080",
+      "severity": "LOW",
+      "package": "libexpat1",
+      "installed_version": "2.7.1-2",
+      "fixed_version": "",
+      "title": "libexpat: expat: libexpat: Denial of Service via hash flooding with crafted XML"
+    },
+    {
+      "id": "CVE-2026-41989",
+      "severity": "MEDIUM",
+      "package": "libgcrypt20",
+      "installed_version": "1.11.0-7",
+      "fixed_version": "1.11.0-7+deb13u1",
+      "title": "Libgcrypt: Libgcrypt: Denial of Service and buffer overflow via crafted ECDH ciphertext"
+    },
+    {
+      "id": "CVE-2018-6829",
+      "severity": "LOW",
+      "package": "libgcrypt20",
+      "installed_version": "1.11.0-7",
+      "fixed_version": "",
+      "title": "libgcrypt: ElGamal implementation doesn't have semantic security due to incorrectly encoded plaintexts possibly allowing to obtain sensitive information"
+    },
+    {
+      "id": "CVE-2024-2236",
+      "severity": "LOW",
+      "package": "libgcrypt20",
+      "installed_version": "1.11.0-7",
+      "fixed_version": "",
+      "title": "A timing-based side-channel flaw was found in libgcrypt's RSA implemen ..."
+    },
+    {
+      "id": "CVE-2011-3389",
+      "severity": "LOW",
+      "package": "libgnutls30t64",
+      "installed_version": "3.8.9-3+deb13u4",
+      "fixed_version": "",
+      "title": "HTTPS: block-wise chosen-plaintext attack against SSL/TLS (BEAST)"
+    },
+    {
+      "id": "CVE-2026-40356",
+      "severity": "HIGH",
+      "package": "libgssapi-krb5-2",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "1.21.3-5+deb13u1",
+      "title": "krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read"
+    },
+    {
+      "id": "CVE-2026-40355",
+      "severity": "MEDIUM",
+      "package": "libgssapi-krb5-2",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "1.21.3-5+deb13u1",
+      "title": "krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism"
+    },
+    {
+      "id": "CVE-2018-5709",
+      "severity": "LOW",
+      "package": "libgssapi-krb5-2",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c"
+    },
+    {
+      "id": "CVE-2024-26458",
+      "severity": "LOW",
+      "package": "libgssapi-krb5-2",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/r ..."
+    },
+    {
+      "id": "CVE-2024-26461",
+      "severity": "LOW",
+      "package": "libgssapi-krb5-2",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in / ..."
+    },
+    {
+      "id": "CVE-2025-68431",
+      "severity": "HIGH",
+      "package": "libheif-plugin-dav1d",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif is an HEIF and AVIF file format decoder and encoder. Prior to  ..."
+    },
+    {
+      "id": "CVE-2026-32740",
+      "severity": "HIGH",
+      "package": "libheif-plugin-dav1d",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Arbitrary code execution or denial of service via crafted HEIF/AVIF file"
+    },
+    {
+      "id": "CVE-2026-32741",
+      "severity": "HIGH",
+      "package": "libheif-plugin-dav1d",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Heap buffer overflow vulnerability in image decoding"
+    },
+    {
+      "id": "CVE-2026-32882",
+      "severity": "HIGH",
+      "package": "libheif-plugin-dav1d",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Denial of Service and Information Disclosure vulnerability"
+    },
+    {
+      "id": "CVE-2026-41071",
+      "severity": "HIGH",
+      "package": "libheif-plugin-dav1d",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif is a HEIF and AVIF file format decoder and encoder. In version ..."
+    },
+    {
+      "id": "CVE-2026-32738",
+      "severity": "MEDIUM",
+      "package": "libheif-plugin-dav1d",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Unsigned integer underflow leads to Denial of Service"
+    },
+    {
+      "id": "CVE-2026-32739",
+      "severity": "MEDIUM",
+      "package": "libheif-plugin-dav1d",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Denial of Service via crafted HEIF sequence file"
+    },
+    {
+      "id": "CVE-2026-32814",
+      "severity": "MEDIUM",
+      "package": "libheif-plugin-dav1d",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Information Disclosure via Crafted HEIF/AVIF Files"
+    },
+    {
+      "id": "CVE-2026-3949",
+      "severity": "LOW",
+      "package": "libheif-plugin-dav1d",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Out-of-bounds read via local argument manipulation"
+    },
+    {
+      "id": "CVE-2026-41069",
+      "severity": "UNKNOWN",
+      "package": "libheif-plugin-dav1d",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif is a HEIF and AVIF file format decoder and encoder. In version ..."
+    },
+    {
+      "id": "CVE-2025-68431",
+      "severity": "HIGH",
+      "package": "libheif-plugin-libde265",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif is an HEIF and AVIF file format decoder and encoder. Prior to  ..."
+    },
+    {
+      "id": "CVE-2026-32740",
+      "severity": "HIGH",
+      "package": "libheif-plugin-libde265",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Arbitrary code execution or denial of service via crafted HEIF/AVIF file"
+    },
+    {
+      "id": "CVE-2026-32741",
+      "severity": "HIGH",
+      "package": "libheif-plugin-libde265",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Heap buffer overflow vulnerability in image decoding"
+    },
+    {
+      "id": "CVE-2026-32882",
+      "severity": "HIGH",
+      "package": "libheif-plugin-libde265",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Denial of Service and Information Disclosure vulnerability"
+    },
+    {
+      "id": "CVE-2026-41071",
+      "severity": "HIGH",
+      "package": "libheif-plugin-libde265",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif is a HEIF and AVIF file format decoder and encoder. In version ..."
+    },
+    {
+      "id": "CVE-2026-32738",
+      "severity": "MEDIUM",
+      "package": "libheif-plugin-libde265",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Unsigned integer underflow leads to Denial of Service"
+    },
+    {
+      "id": "CVE-2026-32739",
+      "severity": "MEDIUM",
+      "package": "libheif-plugin-libde265",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Denial of Service via crafted HEIF sequence file"
+    },
+    {
+      "id": "CVE-2026-32814",
+      "severity": "MEDIUM",
+      "package": "libheif-plugin-libde265",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Information Disclosure via Crafted HEIF/AVIF Files"
+    },
+    {
+      "id": "CVE-2026-3949",
+      "severity": "LOW",
+      "package": "libheif-plugin-libde265",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Out-of-bounds read via local argument manipulation"
+    },
+    {
+      "id": "CVE-2026-41069",
+      "severity": "UNKNOWN",
+      "package": "libheif-plugin-libde265",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif is a HEIF and AVIF file format decoder and encoder. In version ..."
+    },
+    {
+      "id": "CVE-2025-68431",
+      "severity": "HIGH",
+      "package": "libheif1",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif is an HEIF and AVIF file format decoder and encoder. Prior to  ..."
+    },
+    {
+      "id": "CVE-2026-32740",
+      "severity": "HIGH",
+      "package": "libheif1",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Arbitrary code execution or denial of service via crafted HEIF/AVIF file"
+    },
+    {
+      "id": "CVE-2026-32741",
+      "severity": "HIGH",
+      "package": "libheif1",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Heap buffer overflow vulnerability in image decoding"
+    },
+    {
+      "id": "CVE-2026-32882",
+      "severity": "HIGH",
+      "package": "libheif1",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Denial of Service and Information Disclosure vulnerability"
+    },
+    {
+      "id": "CVE-2026-41071",
+      "severity": "HIGH",
+      "package": "libheif1",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif is a HEIF and AVIF file format decoder and encoder. In version ..."
+    },
+    {
+      "id": "CVE-2026-32738",
+      "severity": "MEDIUM",
+      "package": "libheif1",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Unsigned integer underflow leads to Denial of Service"
+    },
+    {
+      "id": "CVE-2026-32739",
+      "severity": "MEDIUM",
+      "package": "libheif1",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Denial of Service via crafted HEIF sequence file"
+    },
+    {
+      "id": "CVE-2026-32814",
+      "severity": "MEDIUM",
+      "package": "libheif1",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Information Disclosure via Crafted HEIF/AVIF Files"
+    },
+    {
+      "id": "CVE-2026-3949",
+      "severity": "LOW",
+      "package": "libheif1",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif: libheif: Out-of-bounds read via local argument manipulation"
+    },
+    {
+      "id": "CVE-2026-41069",
+      "severity": "UNKNOWN",
+      "package": "libheif1",
+      "installed_version": "1.19.8-1",
+      "fixed_version": "",
+      "title": "libheif is a HEIF and AVIF file format decoder and encoder. In version ..."
+    },
+    {
+      "id": "CVE-2017-9937",
+      "severity": "LOW",
+      "package": "libjbig0",
+      "installed_version": "2.1-6.1+b2",
+      "fixed_version": "",
+      "title": "libtiff: memory malloc failure in tif_jbig.c could cause DOS."
+    },
+    {
+      "id": "CVE-2026-40356",
+      "severity": "HIGH",
+      "package": "libk5crypto3",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "1.21.3-5+deb13u1",
+      "title": "krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read"
+    },
+    {
+      "id": "CVE-2026-40355",
+      "severity": "MEDIUM",
+      "package": "libk5crypto3",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "1.21.3-5+deb13u1",
+      "title": "krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism"
+    },
+    {
+      "id": "CVE-2018-5709",
+      "severity": "LOW",
+      "package": "libk5crypto3",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c"
+    },
+    {
+      "id": "CVE-2024-26458",
+      "severity": "LOW",
+      "package": "libk5crypto3",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/r ..."
+    },
+    {
+      "id": "CVE-2024-26461",
+      "severity": "LOW",
+      "package": "libk5crypto3",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in / ..."
+    },
+    {
+      "id": "CVE-2026-40356",
+      "severity": "HIGH",
+      "package": "libkrb5-3",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "1.21.3-5+deb13u1",
+      "title": "krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read"
+    },
+    {
+      "id": "CVE-2026-40355",
+      "severity": "MEDIUM",
+      "package": "libkrb5-3",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "1.21.3-5+deb13u1",
+      "title": "krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism"
+    },
+    {
+      "id": "CVE-2018-5709",
+      "severity": "LOW",
+      "package": "libkrb5-3",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c"
+    },
+    {
+      "id": "CVE-2024-26458",
+      "severity": "LOW",
+      "package": "libkrb5-3",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/r ..."
+    },
+    {
+      "id": "CVE-2024-26461",
+      "severity": "LOW",
+      "package": "libkrb5-3",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in / ..."
+    },
+    {
+      "id": "CVE-2026-40356",
+      "severity": "HIGH",
+      "package": "libkrb5support0",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "1.21.3-5+deb13u1",
+      "title": "krb5: MIT Kerberos 5 (krb5): Denial of Service via integer underflow and out-of-bounds read"
+    },
+    {
+      "id": "CVE-2026-40355",
+      "severity": "MEDIUM",
+      "package": "libkrb5support0",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "1.21.3-5+deb13u1",
+      "title": "krb5: MIT Kerberos 5: Denial of Service via NULL pointer dereference in NegoEx mechanism"
+    },
+    {
+      "id": "CVE-2018-5709",
+      "severity": "LOW",
+      "package": "libkrb5support0",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c"
+    },
+    {
+      "id": "CVE-2024-26458",
+      "severity": "LOW",
+      "package": "libkrb5support0",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/r ..."
+    },
+    {
+      "id": "CVE-2024-26461",
+      "severity": "LOW",
+      "package": "libkrb5support0",
+      "installed_version": "1.21.3-5",
+      "fixed_version": "",
+      "title": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in / ..."
+    },
+    {
+      "id": "CVE-2026-27456",
+      "severity": "MEDIUM",
+      "package": "liblastlog2-2",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: TOCTOU in the mount program when setting up loop devices"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "severity": "MEDIUM",
+      "package": "liblastlog2-2",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "severity": "LOW",
+      "package": "liblastlog2-2",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline"
+    },
+    {
+      "id": "CVE-2025-14104",
+      "severity": "LOW",
+      "package": "liblastlog2-2",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "A flaw was found in util-linux. This vulnerability allows a heap buffe ..."
+    },
+    {
+      "id": "CVE-2015-3276",
+      "severity": "LOW",
+      "package": "libldap2",
+      "installed_version": "2.6.10+dfsg-1",
+      "fixed_version": "",
+      "title": "openldap: incorrect multi-keyword mode cipherstring parsing"
+    },
+    {
+      "id": "CVE-2017-14159",
+      "severity": "LOW",
+      "package": "libldap2",
+      "installed_version": "2.6.10+dfsg-1",
+      "fixed_version": "",
+      "title": "openldap: Privilege escalation via PID file manipulation"
+    },
+    {
+      "id": "CVE-2017-17740",
+      "severity": "LOW",
+      "package": "libldap2",
+      "installed_version": "2.6.10+dfsg-1",
+      "fixed_version": "",
+      "title": "openldap: contrib/slapd-modules/nops/nops.c attempts to free stack buffer allowing remote attackers to cause a denial of service"
+    },
+    {
+      "id": "CVE-2020-15719",
+      "severity": "LOW",
+      "package": "libldap2",
+      "installed_version": "2.6.10+dfsg-1",
+      "fixed_version": "",
+      "title": "openldap: Certificate validation incorrectly matches name against CN-ID"
+    },
+    {
+      "id": "CVE-2026-22185",
+      "severity": "LOW",
+      "package": "libldap2",
+      "installed_version": "2.6.10+dfsg-1",
+      "fixed_version": "",
+      "title": "OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow"
+    },
+    {
+      "id": "CVE-2026-34743",
+      "severity": "MEDIUM",
+      "package": "liblzma5",
+      "installed_version": "5.8.1-1",
+      "fixed_version": "",
+      "title": "xz: XZ Utils: Denial of Service via buffer overflow in index decoding"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "severity": "MEDIUM",
+      "package": "libmount1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: TOCTOU in the mount program when setting up loop devices"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "severity": "MEDIUM",
+      "package": "libmount1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "severity": "LOW",
+      "package": "libmount1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline"
+    },
+    {
+      "id": "CVE-2025-14104",
+      "severity": "LOW",
+      "package": "libmount1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "A flaw was found in util-linux. This vulnerability allows a heap buffe ..."
+    },
+    {
+      "id": "CVE-2021-4214",
+      "severity": "LOW",
+      "package": "libpng16-16t64",
+      "installed_version": "1.6.48-1+deb13u5",
+      "fixed_version": "",
+      "title": "libpng: hardcoded value leads to heap-overflow"
+    },
+    {
+      "id": "CVE-2026-3713",
+      "severity": "LOW",
+      "package": "libpng16-16t64",
+      "installed_version": "1.6.48-1+deb13u5",
+      "fixed_version": "",
+      "title": "libpng: libpng: Heap-based buffer overflow in pnm2png allows information disclosure and denial of service"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "severity": "MEDIUM",
+      "package": "libsmartcols1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: TOCTOU in the mount program when setting up loop devices"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "severity": "MEDIUM",
+      "package": "libsmartcols1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "severity": "LOW",
+      "package": "libsmartcols1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline"
+    },
+    {
+      "id": "CVE-2025-14104",
+      "severity": "LOW",
+      "package": "libsmartcols1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "A flaw was found in util-linux. This vulnerability allows a heap buffe ..."
+    },
+    {
+      "id": "CVE-2021-45346",
+      "severity": "LOW",
+      "package": "libsqlite3-0",
+      "installed_version": "3.46.1-7+deb13u1",
+      "fixed_version": "",
+      "title": "sqlite: crafted SQL query allows a malicious user to obtain sensitive information"
+    },
+    {
+      "id": "CVE-2025-70873",
+      "severity": "LOW",
+      "package": "libsqlite3-0",
+      "installed_version": "3.46.1-7+deb13u1",
+      "fixed_version": "",
+      "title": "sqlite: SQLite: Information Disclosure via Crafted ZIP File"
+    },
+    {
+      "id": "CVE-2026-7598",
+      "severity": "HIGH",
+      "package": "libssh2-1t64",
+      "installed_version": "1.11.1-1",
+      "fixed_version": "",
+      "title": "libssh2: integer overflow via large username or password arguments"
+    },
+    {
+      "id": "CVE-2013-4392",
+      "severity": "LOW",
+      "package": "libsystemd0",
+      "installed_version": "257.13-1~deb13u1",
+      "fixed_version": "",
+      "title": "systemd: TOCTOU race condition when updating file permissions and SELinux security contexts"
+    },
+    {
+      "id": "CVE-2023-31437",
+      "severity": "LOW",
+      "package": "libsystemd0",
+      "installed_version": "257.13-1~deb13u1",
+      "fixed_version": "",
+      "title": "An issue was discovered in systemd 253. An attacker can modify a seale ..."
+    },
+    {
+      "id": "CVE-2023-31438",
+      "severity": "LOW",
+      "package": "libsystemd0",
+      "installed_version": "257.13-1~deb13u1",
+      "fixed_version": "",
+      "title": "An issue was discovered in systemd 253. An attacker can truncate a sea ..."
+    },
+    {
+      "id": "CVE-2023-31439",
+      "severity": "LOW",
+      "package": "libsystemd0",
+      "installed_version": "257.13-1~deb13u1",
+      "fixed_version": "",
+      "title": "An issue was discovered in systemd 253. An attacker can modify the con ..."
+    },
+    {
+      "id": "CVE-2026-40228",
+      "severity": "LOW",
+      "package": "libsystemd0",
+      "installed_version": "257.13-1~deb13u1",
+      "fixed_version": "",
+      "title": "systemd: systemd-journald: Unintended output to user terminals via logger command"
+    },
+    {
+      "id": "CVE-2025-13151",
+      "severity": "LOW",
+      "package": "libtasn1-6",
+      "installed_version": "4.20.0-2",
+      "fixed_version": "",
+      "title": "libtasn1: libtasn1: Denial of Service via stack-based buffer overflow in asn1_expend_octet_string"
+    },
+    {
+      "id": "CVE-2017-16232",
+      "severity": "LOW",
+      "package": "libtiff6",
+      "installed_version": "4.7.0-3+deb13u2",
+      "fixed_version": "",
+      "title": "libtiff: Memory leaks in tif_open.c, tif_lzw.c, and tif_aux.c"
+    },
+    {
+      "id": "CVE-2018-10126",
+      "severity": "LOW",
+      "package": "libtiff6",
+      "installed_version": "4.7.0-3+deb13u2",
+      "fixed_version": "",
+      "title": "libtiff: NULL pointer dereference in the jpeg_fdct_16x16 function in jfdctint.c"
+    },
+    {
+      "id": "CVE-2022-1210",
+      "severity": "LOW",
+      "package": "libtiff6",
+      "installed_version": "4.7.0-3+deb13u2",
+      "fixed_version": "",
+      "title": "tiff: Malicious file leads to a denial of service in TIFF File Handler"
+    },
+    {
+      "id": "CVE-2025-61143",
+      "severity": "LOW",
+      "package": "libtiff6",
+      "installed_version": "4.7.0-3+deb13u2",
+      "fixed_version": "",
+      "title": "libtiff: libtiff: Denial of Service via NULL pointer dereference in tif_open.c"
+    },
+    {
+      "id": "CVE-2025-61144",
+      "severity": "LOW",
+      "package": "libtiff6",
+      "installed_version": "4.7.0-3+deb13u2",
+      "fixed_version": "",
+      "title": "libtiff: libtiff: Denial of Service via buffer overflow"
+    },
+    {
+      "id": "CVE-2025-61145",
+      "severity": "LOW",
+      "package": "libtiff6",
+      "installed_version": "4.7.0-3+deb13u2",
+      "fixed_version": "",
+      "title": "libtiff: libtiff: Denial of service via double free in tiffcrop.c"
+    },
+    {
+      "id": "CVE-2025-8176",
+      "severity": "LOW",
+      "package": "libtiff6",
+      "installed_version": "4.7.0-3+deb13u2",
+      "fixed_version": "",
+      "title": "A vulnerability was found in LibTIFF up to 4.7.0. It has been declared ..."
+    },
+    {
+      "id": "CVE-2025-8177",
+      "severity": "LOW",
+      "package": "libtiff6",
+      "installed_version": "4.7.0-3+deb13u2",
+      "fixed_version": "",
+      "title": "A vulnerability was found in LibTIFF up to 4.7.0. It has been rated as ..."
+    },
+    {
+      "id": "CVE-2025-8534",
+      "severity": "LOW",
+      "package": "libtiff6",
+      "installed_version": "4.7.0-3+deb13u2",
+      "fixed_version": "",
+      "title": "A vulnerability classified as problematic was found in libtiff 4.6.0.  ..."
+    },
+    {
+      "id": "CVE-2025-69720",
+      "severity": "HIGH",
+      "package": "libtinfo6",
+      "installed_version": "6.5+20250216-2",
+      "fixed_version": "",
+      "title": "ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution."
+    },
+    {
+      "id": "CVE-2025-6141",
+      "severity": "LOW",
+      "package": "libtinfo6",
+      "installed_version": "6.5+20250216-2",
+      "fixed_version": "",
+      "title": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and c ..."
+    },
+    {
+      "id": "CVE-2013-4392",
+      "severity": "LOW",
+      "package": "libudev1",
+      "installed_version": "257.13-1~deb13u1",
+      "fixed_version": "",
+      "title": "systemd: TOCTOU race condition when updating file permissions and SELinux security contexts"
+    },
+    {
+      "id": "CVE-2023-31437",
+      "severity": "LOW",
+      "package": "libudev1",
+      "installed_version": "257.13-1~deb13u1",
+      "fixed_version": "",
+      "title": "An issue was discovered in systemd 253. An attacker can modify a seale ..."
+    },
+    {
+      "id": "CVE-2023-31438",
+      "severity": "LOW",
+      "package": "libudev1",
+      "installed_version": "257.13-1~deb13u1",
+      "fixed_version": "",
+      "title": "An issue was discovered in systemd 253. An attacker can truncate a sea ..."
+    },
+    {
+      "id": "CVE-2023-31439",
+      "severity": "LOW",
+      "package": "libudev1",
+      "installed_version": "257.13-1~deb13u1",
+      "fixed_version": "",
+      "title": "An issue was discovered in systemd 253. An attacker can modify the con ..."
+    },
+    {
+      "id": "CVE-2026-40228",
+      "severity": "LOW",
+      "package": "libudev1",
+      "installed_version": "257.13-1~deb13u1",
+      "fixed_version": "",
+      "title": "systemd: systemd-journald: Unintended output to user terminals via logger command"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "severity": "MEDIUM",
+      "package": "libuuid1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: TOCTOU in the mount program when setting up loop devices"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "severity": "MEDIUM",
+      "package": "libuuid1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "severity": "LOW",
+      "package": "libuuid1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline"
+    },
+    {
+      "id": "CVE-2025-14104",
+      "severity": "LOW",
+      "package": "libuuid1",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "A flaw was found in util-linux. This vulnerability allows a heap buffe ..."
+    },
+    {
+      "id": "CVE-2026-6732",
+      "severity": "HIGH",
+      "package": "libxml2",
+      "installed_version": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
+      "fixed_version": "",
+      "title": "libxml2: libxml2: Denial of Service via crafted XSD-validated document"
+    },
+    {
+      "id": "CVE-2026-0990",
+      "severity": "MEDIUM",
+      "package": "libxml2",
+      "installed_version": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
+      "fixed_version": "",
+      "title": "libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing"
+    },
+    {
+      "id": "CVE-2025-8732",
+      "severity": "LOW",
+      "package": "libxml2",
+      "installed_version": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
+      "fixed_version": "",
+      "title": "A vulnerability was found in libxml2 up to 2.14.5. It has been declare ..."
+    },
+    {
+      "id": "CVE-2026-0989",
+      "severity": "LOW",
+      "package": "libxml2",
+      "installed_version": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
+      "fixed_version": "",
+      "title": "libxml2: Unbounded RelaxNG Include Recursion Leading to Stack Overflow"
+    },
+    {
+      "id": "CVE-2026-0992",
+      "severity": "LOW",
+      "package": "libxml2",
+      "installed_version": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
+      "fixed_version": "",
+      "title": "libxml2: libxml2: Denial of Service via crafted XML catalogs"
+    },
+    {
+      "id": "CVE-2026-1757",
+      "severity": "LOW",
+      "package": "libxml2",
+      "installed_version": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
+      "fixed_version": "",
+      "title": "libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell"
+    },
+    {
+      "id": "CVE-2026-4367",
+      "severity": "MEDIUM",
+      "package": "libxpm4",
+      "installed_version": "1:3.5.17-1+b3",
+      "fixed_version": "",
+      "title": ""
+    },
+    {
+      "id": "CVE-2025-10911",
+      "severity": "MEDIUM",
+      "package": "libxslt1.1",
+      "installed_version": "1.1.35-1.2+deb13u3",
+      "fixed_version": "",
+      "title": "A use-after-free vulnerability was found in libxslt while parsing xsl  ..."
+    },
+    {
+      "id": "CVE-2015-9019",
+      "severity": "LOW",
+      "package": "libxslt1.1",
+      "installed_version": "1.1.35-1.2+deb13u3",
+      "fixed_version": "",
+      "title": "libxslt: math.random() in xslt uses unseeded randomness"
+    },
+    {
+      "id": "CVE-2025-11731",
+      "severity": "LOW",
+      "package": "libxslt1.1",
+      "installed_version": "1.1.35-1.2+deb13u3",
+      "fixed_version": "",
+      "title": "A flaw was found in the exsltFuncResultComp() function of libxslt, whi ..."
+    },
+    {
+      "id": "CVE-2026-27456",
+      "severity": "MEDIUM",
+      "package": "login",
+      "installed_version": "1:4.16.0-2+really2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: TOCTOU in the mount program when setting up loop devices"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "severity": "MEDIUM",
+      "package": "login",
+      "installed_version": "1:4.16.0-2+really2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "severity": "LOW",
+      "package": "login",
+      "installed_version": "1:4.16.0-2+really2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline"
+    },
+    {
+      "id": "CVE-2025-14104",
+      "severity": "LOW",
+      "package": "login",
+      "installed_version": "1:4.16.0-2+really2.41-5",
+      "fixed_version": "",
+      "title": "A flaw was found in util-linux. This vulnerability allows a heap buffe ..."
+    },
+    {
+      "id": "CVE-2007-5686",
+      "severity": "LOW",
+      "package": "login.defs",
+      "installed_version": "1:4.17.4-2",
+      "fixed_version": "",
+      "title": "initscripts in rPath Linux 1 sets insecure permissions for the /var/lo ..."
+    },
+    {
+      "id": "CVE-2024-56433",
+      "severity": "LOW",
+      "package": "login.defs",
+      "installed_version": "1:4.17.4-2",
+      "fixed_version": "",
+      "title": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /et ..."
+    },
+    {
+      "id": "TEMP-0628843-DBAD28",
+      "severity": "LOW",
+      "package": "login.defs",
+      "installed_version": "1:4.17.4-2",
+      "fixed_version": "",
+      "title": "[more related to CVE-2005-4890]"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "severity": "MEDIUM",
+      "package": "mount",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: TOCTOU in the mount program when setting up loop devices"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "severity": "MEDIUM",
+      "package": "mount",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "severity": "LOW",
+      "package": "mount",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline"
+    },
+    {
+      "id": "CVE-2025-14104",
+      "severity": "LOW",
+      "package": "mount",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "A flaw was found in util-linux. This vulnerability allows a heap buffe ..."
+    },
+    {
+      "id": "CVE-2025-69720",
+      "severity": "HIGH",
+      "package": "ncurses-base",
+      "installed_version": "6.5+20250216-2",
+      "fixed_version": "",
+      "title": "ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution."
+    },
+    {
+      "id": "CVE-2025-6141",
+      "severity": "LOW",
+      "package": "ncurses-base",
+      "installed_version": "6.5+20250216-2",
+      "fixed_version": "",
+      "title": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and c ..."
+    },
+    {
+      "id": "CVE-2025-69720",
+      "severity": "HIGH",
+      "package": "ncurses-bin",
+      "installed_version": "6.5+20250216-2",
+      "fixed_version": "",
+      "title": "ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution."
+    },
+    {
+      "id": "CVE-2025-6141",
+      "severity": "LOW",
+      "package": "ncurses-bin",
+      "installed_version": "6.5+20250216-2",
+      "fixed_version": "",
+      "title": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and c ..."
+    },
+    {
+      "id": "CVE-2007-5686",
+      "severity": "LOW",
+      "package": "passwd",
+      "installed_version": "1:4.17.4-2",
+      "fixed_version": "",
+      "title": "initscripts in rPath Linux 1 sets insecure permissions for the /var/lo ..."
+    },
+    {
+      "id": "CVE-2024-56433",
+      "severity": "LOW",
+      "package": "passwd",
+      "installed_version": "1:4.17.4-2",
+      "fixed_version": "",
+      "title": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /et ..."
+    },
+    {
+      "id": "TEMP-0628843-DBAD28",
+      "severity": "LOW",
+      "package": "passwd",
+      "installed_version": "1:4.17.4-2",
+      "fixed_version": "",
+      "title": "[more related to CVE-2005-4890]"
+    },
+    {
+      "id": "CVE-2026-42496",
+      "severity": "CRITICAL",
+      "package": "perl-base",
+      "installed_version": "5.40.1-6",
+      "fixed_version": "",
+      "title": "Archive::Tar versions before 3.08 for Perl extract symlinks with attac ..."
+    },
+    {
+      "id": "CVE-2026-8376",
+      "severity": "CRITICAL",
+      "package": "perl-base",
+      "installed_version": "5.40.1-6",
+      "fixed_version": "",
+      "title": "Perl versions through 5.43.10 have a heap buffer overflow when compili ..."
+    },
+    {
+      "id": "CVE-2026-42497",
+      "severity": "HIGH",
+      "package": "perl-base",
+      "installed_version": "5.40.1-6",
+      "fixed_version": "",
+      "title": "Archive::Tar versions before 3.08 for Perl extract hardlinks to attack ..."
+    },
+    {
+      "id": "CVE-2026-9538",
+      "severity": "HIGH",
+      "package": "perl-base",
+      "installed_version": "5.40.1-6",
+      "fixed_version": "",
+      "title": "Archive::Tar versions before 3.10 for Perl allow memory exhaustion via ..."
+    },
+    {
+      "id": "CVE-2011-4116",
+      "severity": "LOW",
+      "package": "perl-base",
+      "installed_version": "5.40.1-6",
+      "fixed_version": "",
+      "title": "perl: File:: Temp insecure temporary file handling"
+    },
+    {
+      "id": "CVE-2025-15649",
+      "severity": "UNKNOWN",
+      "package": "perl-base",
+      "installed_version": "5.40.1-6",
+      "fixed_version": "",
+      "title": "IO::Uncompress::Unzip versions before 2.215 for Perl propagate uncaugh ..."
+    },
+    {
+      "id": "CVE-2026-48959",
+      "severity": "UNKNOWN",
+      "package": "perl-base",
+      "installed_version": "5.40.1-6",
+      "fixed_version": "",
+      "title": "IO::Uncompress::Unzip versions before 2.220 for Perl allow CPU exhaust ..."
+    },
+    {
+      "id": "CVE-2026-48961",
+      "severity": "UNKNOWN",
+      "package": "perl-base",
+      "installed_version": "5.40.1-6",
+      "fixed_version": "",
+      "title": "IO::Compress versions from 2.207 before 2.220 for Perl ship a zipdetai ..."
+    },
+    {
+      "id": "CVE-2026-48962",
+      "severity": "UNKNOWN",
+      "package": "perl-base",
+      "installed_version": "5.40.1-6",
+      "fixed_version": "",
+      "title": "IO::Compress versions before 2.220 for Perl can execute arbitrary code ..."
+    },
+    {
+      "id": "TEMP-0517018-A83CE6",
+      "severity": "LOW",
+      "package": "sysvinit-utils",
+      "installed_version": "3.14-4",
+      "fixed_version": "",
+      "title": "[sysvinit: no-root option in expert installer exposes locally exploitable security flaw]"
+    },
+    {
+      "id": "CVE-2026-5704",
+      "severity": "MEDIUM",
+      "package": "tar",
+      "installed_version": "1.35+dfsg-3.1",
+      "fixed_version": "",
+      "title": "tar: tar: Hidden file injection via crafted archives"
+    },
+    {
+      "id": "CVE-2005-2541",
+      "severity": "LOW",
+      "package": "tar",
+      "installed_version": "1.35+dfsg-3.1",
+      "fixed_version": "",
+      "title": "tar: does not properly warn the user when extracting setuid or setgid files"
+    },
+    {
+      "id": "TEMP-0290435-0B57B5",
+      "severity": "LOW",
+      "package": "tar",
+      "installed_version": "1.35+dfsg-3.1",
+      "fixed_version": "",
+      "title": "[tar's rmt command may have undesired side effects]"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "severity": "MEDIUM",
+      "package": "util-linux",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: TOCTOU in the mount program when setting up loop devices"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "severity": "MEDIUM",
+      "package": "util-linux",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "severity": "LOW",
+      "package": "util-linux",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline"
+    },
+    {
+      "id": "CVE-2025-14104",
+      "severity": "LOW",
+      "package": "util-linux",
+      "installed_version": "2.41-5",
+      "fixed_version": "",
+      "title": "A flaw was found in util-linux. This vulnerability allows a heap buffe ..."
+    },
+    {
+      "id": "CVE-2026-27171",
+      "severity": "MEDIUM",
+      "package": "zlib1g",
+      "installed_version": "1:1.3.dfsg+really1.3.1-1+b1",
+      "fixed_version": "",
+      "title": "zlib: zlib: Denial of Service via infinite loop in CRC32 combine functions"
+    }
+  ]
+}

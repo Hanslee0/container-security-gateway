@@ -23,6 +23,47 @@ if [ -z "$IMAGE" ]; then
   exit 1
 fi
 
+# ----- 입력값 검증 -----
+
+# 1. 배포 환경 화이트리스트 검증
+case "$ENVIRONMENT" in
+  dev|staging|prod)
+    ;;
+  *)
+    echo "오류: 배포 환경은 dev, staging, prod 중 하나여야 합니다."
+    echo "입력된 값: $ENVIRONMENT"
+    exit 1
+    ;;
+esac
+
+# 2. 세 번째 인자가 있다면 --deploy만 허용
+if [ -n "$3" ] && [ "$3" != "--deploy" ]; then
+  echo "오류: 세 번째 인자는 --deploy만 사용할 수 있습니다."
+  echo "입력된 값: $3"
+  exit 1
+fi
+
+# 3. 컨테이너 이미지명 형식 검증
+if [[ ! "$IMAGE" =~ ^[a-zA-Z0-9._/:@-]+$ ]]; then
+  echo "오류: 올바르지 않은 컨테이너 이미지명 형식입니다."
+  echo "이미지명에는 영문자, 숫자, '.', '_', '-', '/', ':', '@'만 사용할 수 있습니다."
+  exit 1
+fi
+
+# 3-1. 이미지 태그 또는 digest 필수 검증
+if [[ ! "$IMAGE" =~ @sha256:[a-fA-F0-9]{64}$ && ! "$IMAGE" =~ :[^/]+$ ]]; then
+  echo "오류: 이미지 태그 또는 digest를 명시해야 합니다."
+  echo "예시: nginx:1.21 또는 nginx@sha256:<digest>"
+  exit 1
+fi
+
+# 4. prod 환경에서는 latest 태그 사용 제한
+if [ "$ENVIRONMENT" = "prod" ] && [[ "$IMAGE" == *":latest" ]]; then
+  echo "오류: prod 환경에서는 latest 태그를 사용할 수 없습니다."
+  echo "명확한 버전 태그를 사용하세요. 예: nginx:1.21"
+  exit 1
+fi
+
 SAFE_IMAGE=$(echo "$IMAGE" | sed 's#[/:]#-#g')
 
 RAW_RESULT="scans/${SAFE_IMAGE}-result.json"
@@ -41,11 +82,17 @@ echo "배포 환경: $ENVIRONMENT"
 echo ""
 
 echo "----- 1. Trivy 취약점 스캔 -----"
-trivy image "$IMAGE" \
+if ! trivy image "$IMAGE" \
   --scanners vuln \
   --timeout 15m \
   --format json \
-  --output "$RAW_RESULT"
+  --output "$RAW_RESULT"; then
+
+  echo "[ERROR] Trivy 스캔 실패"
+  echo "입력한 값이 존재하지 않는 컨테이너 이미지이거나 접근할 수 없는 이미지일 수 있습니다."
+  echo "입력값: $IMAGE"
+  exit 1
+fi
 
 echo "[OK] Trivy 스캔 결과 저장: $RAW_RESULT"
 echo ""

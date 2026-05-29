@@ -1,0 +1,4 @@
+{
+  "reason": "dev environment: HIGH vulnerabilities are 10 or more: 33",
+  "result": "HOLD"
+}
